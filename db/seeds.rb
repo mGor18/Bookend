@@ -21,9 +21,9 @@ require 'faker'
   5.times do
     title = Faker::Book.title
     author = Faker::Book.author
-    synopsis = Faker::Lorem.sentences(word_count: rand(1..5))
+    synopsis = Faker::Lorem.sentences(number: rand(5))
 
-    new_book = Book.new(title: title, author: author, isPrivate: false, synopsis: synopsis, book_status: free)
+    new_book = Book.new(title: title, author: author, isPrivate: false, synopsis: synopsis, book_status: 'free')
     new_book.save!
   end
   new_user.save!
