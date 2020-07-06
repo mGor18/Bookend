@@ -40,15 +40,15 @@ ActiveRecord::Schema.define(version: 2020_07_06_103023) do
     t.string "title"
     t.string "author"
     t.string "condition"
-    t.boolean "isPrivate"
+    t.boolean "isPrivate", default: false
     t.text "synopsis"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "book_status"
+    t.string "book_status", default: 'free'
   end
 
   create_table "borrows", force: :cascade do |t|
-    t.string "status"
+    t.string "status", default: "pending"
     t.bigint "user_id", null: false
     t.bigint "book_id", null: false
     t.datetime "created_at", precision: 6, null: false
