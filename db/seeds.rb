@@ -10,4 +10,8 @@ require 'faker'
 # 10 times create new user, can use faker
 # for each user create 5 books, can use faker
 
-10.times()
+10.times do
+  first_name = Faker::Name.first_name
+  last_name = Faker::Name.last_name
+
+end
