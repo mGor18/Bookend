@@ -17,14 +17,15 @@ require 'faker'
   password = '123456'
 
   new_user = User.new(email: email, password: password, first_name: first_name, last_name: last_name)
+  new_user.save!
 
   5.times do
     title = Faker::Book.title
     author = Faker::Book.author
     synopsis = Faker::Lorem.sentences(number: rand(5..8))
+    # user_id = new_user::User
 
-    new_book = Book.new(title: title, author: author, isPrivate: false, synopsis: synopsis, book_status: 'free')
+    new_book = Book.new(title: title, author: author, isPrivate: false, synopsis: synopsis, book_status: 'free', user: new_user)
     new_book.save!
   end
-  new_user.save!
 end
