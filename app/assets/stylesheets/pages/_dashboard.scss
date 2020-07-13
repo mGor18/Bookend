@@ -1,0 +1,37 @@
+.screen-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 91vh;
+  width: 100vw;
+}
+
+.lib-container {
+  background-color: #c8c6af;
+  border-radius: 6px;
+  height: 85%;
+  width: 100%;
+  margin: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-container {
+  background-color: white;
+  height: 75%;
+  width: 70%;
+  margin: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  padding: 20px;
+}
+
+// .image-container {
+//   background-color: white;
+//   height: 75%;
+//   width: auto;
+//   flex-grow: 1;
+//   margin-right: 20px;
+// }

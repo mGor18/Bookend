@@ -1,5 +1,8 @@
 class BooksController < ApplicationController
   def index
-    @books = Book.all
+  end
+
+  def show
+    @book = book(params[:id])
   end
 end

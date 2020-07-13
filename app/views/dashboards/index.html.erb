@@ -1,0 +1,10 @@
+<div class="screen-container">
+  <div class="lib-container">
+    <div class="book-container">
+      <% if @books.any? %>
+        <% @books.each do |book| %>
+          <%= render 'shared/book-card', book: book%>
+        <% end %>
+      <% end %>
+  </div>
+</div>

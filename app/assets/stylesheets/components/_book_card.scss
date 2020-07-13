@@ -1,0 +1,53 @@
+.book-card {
+  height: 16rem;
+  background-color: cornflowerblue;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.book-cover {
+  //background-image: asset-url('book_default.png');
+  background-color: white;
+  background-size: cover;
+  height: 50%;
+  width: 100%;
+}
+
+.book-info {
+  padding: 10px;
+  background-color: beige;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.book-title {
+  height: 25px;
+  width: 100%;
+  background-color: coral;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.book-author {
+  background-color: burlywood;
+  height: 25px;
+  width: 100%;
+}
+
+// .book-synopsis {
+//   background-color: chartreuse;
+//   height: auto;
+//   width: 100%;
+//   flex-grow: 1;
+// }
+
+.text-center {
+  text-align: center;
+}
