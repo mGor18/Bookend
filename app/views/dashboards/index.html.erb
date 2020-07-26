@@ -3,7 +3,7 @@
     <div class="book-container">
       <% if @books.any? %>
         <% @books.each do |book| %>
-          <%= render 'shared/book-card', book: book%>
+          <%= render 'shared/book_card', book: book%>
         <% end %>
       <% end %>
   </div>

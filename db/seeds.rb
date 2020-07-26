@@ -22,7 +22,7 @@ require 'faker'
   5.times do
     title = Faker::Book.title
     author = Faker::Book.author
-    synopsis = Faker::Lorem.sentences(number: rand(5..8))
+    synopsis = Faker::Lorem.paragraph_by_chars(number: rand(200..350), supplemental: false)
     # user_id = new_user::User
 
     new_book = Book.new(title: title, author: author, isPrivate: false, synopsis: synopsis, book_status: 'free', user: new_user)

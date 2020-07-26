@@ -24,13 +24,14 @@
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+  text-align: center;
+  color: black;
 }
 
 .book-title {
   height: 25px;
   width: 100%;
   background-color: coral;
-  text-align: center;
   font-weight: bold;
   font-size: 15px;
 }
@@ -39,15 +40,4 @@
   background-color: burlywood;
   height: 25px;
   width: 100%;
-}
-
-// .book-synopsis {
-//   background-color: chartreuse;
-//   height: auto;
-//   width: 100%;
-//   flex-grow: 1;
-// }
-
-.text-center {
-  text-align: center;
 }

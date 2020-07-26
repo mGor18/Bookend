@@ -1,0 +1,14 @@
+.book-nav {
+  height: 180px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  font-size: 30px;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}

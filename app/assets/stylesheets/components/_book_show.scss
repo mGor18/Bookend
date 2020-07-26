@@ -1,0 +1,19 @@
+.book {
+  height: 90%;
+  width: 35%;
+  margin-left: 37px;
+  border-radius: 25px;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.book-panel {
+  height: 90%;
+  margin-right: 37px;
+  margin-left: 37px;
+  background-color: white;
+  flex: 1;
+  border-radius: 6px;
+  padding: 10px;
+}
