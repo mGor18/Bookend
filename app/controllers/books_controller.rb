@@ -12,6 +12,10 @@ class BooksController < ApplicationController
     redirect_to dashboard_path(@books)
   end
 
+  def edit
+    @book
+  end
+
   private
 
   def set_book
